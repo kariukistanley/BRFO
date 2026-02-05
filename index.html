@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>E-Commerce Business Registration Form</title>
+</head>
+<body>
+    <h2>Business Registration Form</h2>
+    <form action="submit_endpoint_url" method="POST">
+        <label for="businessName">Business Name:</label><br>
+        <input type="text" id="businessName" name="businessName" required><br><br>
+
+        <label for="contactPerson">Contact Person (Full Name):</label><br>
+        <input type="text" id="contactPerson" name="contactPerson" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="address">Business Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="country">Country of Origin:</label><br>
+        <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+
+        <input type="submit" value="Register Business">
+    </form>
+</body>
+</html>
